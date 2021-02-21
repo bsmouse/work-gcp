@@ -1,0 +1,40 @@
+
+###
+GET http://dev20.vm/uwsgi?id=blueapm&pw=1234qwer HTTP/1.1
+
+
+###
+GET http://dev20.vm/uwsgi?id=blueapm&pw=1234qwe HTTP/1.1
+
+
+###
+GET http://dev20.vm/auth?psk=a_secret_password HTTP/1.1
+
+
+### uwsgi auth
+GET http://dev20.vm/uwsgi?psk=a_secret_password HTTP/1.1
+
+
+### flask auth
+POST http://dev20.vm:5000/auth_flask HTTP/1.1
+Content-Type: application/json
+
+{
+    "id" : "blueapm",
+    "psk" : "a_secret_password"
+}
+
+### flask auth
+POST http://dev20.vm:5000/auth_flask HTTP/1.1
+Content-Type: application/json
+
+{
+    "id" : "blueapm",
+    "psk" : "b_secret_password"
+}
+
+###
+GET http://dev20.vm:5000/auth_flask?id=blueapm&psk=a_secret_password HTTP/1.1
+
+###
+GET http://dev20.vm:5000/auth_flask?id=blueapm&psk=b_secret_password HTTP/1.1

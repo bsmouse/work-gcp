@@ -1,0 +1,17 @@
+[2021-02-13 14:47:30,350] ERROR in app: Exception on /sub [GET]
+Traceback (most recent call last):
+  File "/home/bsmouse/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bsmouse/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bsmouse/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bsmouse/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/bsmouse/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bsmouse/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./mqtt_flask.py", line 73, in sub
+    gdata["time"] = datetime.today().strftime("%Y/%m/%d %H:%M:%S")
+TypeError: list indices must be integers or slices, not str
