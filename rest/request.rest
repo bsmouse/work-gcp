@@ -1,0 +1,60 @@
+GET https://www.naver.com/
+
+
+###
+POST https://blog.naver.com/bsmouse HTTP/1.1
+
+Content-Type: application/json
+User-Agent: rest-client
+Accept-Language: en-GB,en-US
+Accept-Encoding: gzip, deflate
+
+{
+    "title" : "New Post",
+    "body" : "This is a new post.",
+    "time" : "{{$timestamp}}"
+}
+
+
+### KCB 
+GET https://safe.ok-name.co.kr/gCEA/
+
+### KT->BNK Private
+GET https://diopenapi.busanbank.co.kr:8443/innerbank/dvs/v1/transfer/transferOurBankDepositDV
+
+
+### KT->BNK Public
+GET https://openapi.busanbank.co.kr:8443/dvs/v1/transfer/transferOurBankDepositDV
+
+
+### BNK->KT Private
+GET https://ddvsinterface.busanbank.co.kr:8090/dv/order/sum/payment/confirm
+
+### KAKAO MAP
+GET https://dapi.kakao.com/
+
+### SettelBank
+GET https://testpay.settlebank.co.kr/
+
+
+### DV B/O
+http://dvsoffice.busanbank.co.kr:8080/
+
+
+### SettleBank
+POST http://npay.settlebank.co.kr/v1/api/auth/ars
+ 
+Content-Type - application/json;charset=UTF-8
+{
+  "mchtCustNm": "iajseBjY1gCCEnuprCLUKQ==",
+  "reqTm": "173906",
+  "pktHash": "063ed8f3b0dc2f7af3c5e1fed7f4266c6951fe6afc091a8d06122177abc67cbf",
+  "authNo": "76",
+  "mchtCustId": "2ry8rzeAGhZlzHbqLP87FA==",
+  "custAcntNo": "4VTNnl1v0ekdzUqg6R09bQ==",
+  "hdInfo": "SPAY_AU00_1.0",
+  "reqDt": "20200405",
+  "cphoneNo": "0DD5l/8RH2MOeTserYQ0kA==",
+  "mchtId": "busanb1r"
+}
+

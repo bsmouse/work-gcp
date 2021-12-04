@@ -1,0 +1,14 @@
+### 테스트 QR
+GET https://dm.busanbank.co.kr/ib20/mnu/WBMONB001007001?GBN=SUMPASSQR&ENPC=512984561234
+
+
+### 운영 QR
+GET https://m.busanbank.co.kr/ib20/mnu/WBMONB001007001?GBN=SUMPASSQR&ENPC=512984561234
+
+
+### 개발
+POST http://dvsapi.busanbank.co.kr:8080/api/v1/did/
+
+### 운용(상용) DID
+POST https://dvsapi.busanbank.co.kr:8443/api/v1/did/
+

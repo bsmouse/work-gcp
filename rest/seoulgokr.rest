@@ -1,0 +1,17 @@
+# data.seoul.go.kr
+# 인증키 : 48756a6b6662736d34304c63574c54
+
+
+
+
+###
+GET http://openapi.seoul.go.kr:8088/48756a6b6662736d34304c63574c54/xml/Corona19Status/1/5/
+
+Content-Type - application/json;charset=UTF-8
+{
+  "KEY": "48756a6b6662736d34304c63574c54",
+  "TYPE": "json",
+  "SERVICE": "Corona19Status",
+  "START_INDEX": "1",
+  "END_INDEX": "10"
+}

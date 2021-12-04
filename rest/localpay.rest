@@ -1,0 +1,57 @@
+
+### 지역화폐-익산 웹회원가입
+GET https://web.ktgoodpay.com/iksan HTTP/1.1
+
+### 지역화폐 - 서비스 이용약관
+GET https://api.ktgoodpay.com/appWeb/terms/user_step1_2
+
+### 지역화폐 - 앱메인 지역정보(구미)
+GET https://api.ktgoodpay.com/appWeb/main?_CID_=GV0000000010
+
+
+
+
+### 지역화폐 김포 선불카드 (DEV)
+GET http://211.254.218.134:8080/appWeb/prepaid/proxy HTTP/1.1
+
+Content-Type - application/json;charset=UTF-8
+{
+  "_CID_": "GV0000000001",
+  "_UID_": "zOCoI7nsAHyi+D8eMaggnw=="
+}
+
+
+
+
+
+###
+POST https://blog.naver.com/bsmouse HTTP/1.1
+
+Content-Type: application/json
+User-Agent: rest-client
+Accept-Language: en-GB,en-US
+Accept-Encoding: gzip, deflate
+
+{
+    "title" : "New Post",
+    "body" : "This is a new post.",
+    "time" : "{{$timestamp}}"
+}
+
+### SettleBank
+POST http://npay.settlebank.co.kr/v1/api/auth/ars
+ 
+Content-Type - application/json;charset=UTF-8
+{
+  "mchtCustNm": "iajseBjY1gCCEnuprCLUKQ==",
+  "reqTm": "173906",
+  "pktHash": "063ed8f3b0dc2f7af3c5e1fed7f4266c6951fe6afc091a8d06122177abc67cbf",
+  "authNo": "76",
+  "mchtCustId": "2ry8rzeAGhZlzHbqLP87FA==",
+  "custAcntNo": "4VTNnl1v0ekdzUqg6R09bQ==",
+  "hdInfo": "SPAY_AU00_1.0",
+  "reqDt": "20200405",
+  "cphoneNo": "0DD5l/8RH2MOeTserYQ0kA==",
+  "mchtId": "busanb1r"
+}
+
