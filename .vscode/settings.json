@@ -2,5 +2,7 @@
   "python.pythonPath": "/usr/bin/python3",
   "python.testing.unittestArgs": ["-v", "-s", "./python", "-p", "*test.py"],
   "python.testing.pytestEnabled": false,
-  "python.testing.unittestEnabled": true
+  "python.testing.unittestEnabled": true,
+  "notebook.markup.fontSize": 14,
+  "notebook.output.textLineLimit": 500
 }

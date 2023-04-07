@@ -1,0 +1,6 @@
+sudo systemctl start nginx.service
+sudo systemctl start vncserver-x11-serviced.service
+sudo systemctl start mavlink-router.service
+sudo systemctl start mjpg_streamer.service
+gstreamer.sh => rc.local 등록
+ffmpeg.sh => rc.local 등록
