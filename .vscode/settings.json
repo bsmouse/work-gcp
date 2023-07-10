@@ -2,5 +2,15 @@
   "python.pythonPath": "/usr/bin/python3",
   "python.testing.unittestArgs": ["-v", "-s", "./python", "-p", "*test.py"],
   "python.testing.pytestEnabled": false,
+<<<<<<< HEAD
   "python.testing.unittestEnabled": true
+=======
+  "python.testing.unittestEnabled": true,
+  "notebook.markup.fontSize": 14,
+  "notebook.output.textLineLimit": 500,
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "python.formatting.provider": "none"
+>>>>>>> 5651d29d86bb5b4e949c68a827243fd0b9fdad3b
 }
