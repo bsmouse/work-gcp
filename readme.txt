@@ -4,3 +4,5 @@
     sudo vi /etc/nginx/nginx.conf - rtmp disable
 2021-01-23
     sudo systemctl enable mosquitto.service
+2023-07-10
+    github commit for jenkins 
