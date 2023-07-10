@@ -58,3 +58,10 @@ Content-Type - application/json;charset=UTF-8
   "mchtId": "busanb1r"
 }
 
+
+### Public IP 
+GET https://api64.ipify.org?format=json
+
+
+### 
+GET https://ipapi.co/121.190.189.144/json/
