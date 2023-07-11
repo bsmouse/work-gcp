@@ -8,6 +8,7 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 
 # bsmouse test........github
 # 11:41 추가
+# 13:56
 
 print(openai.Model.list())
 # print(openai.api_key)
