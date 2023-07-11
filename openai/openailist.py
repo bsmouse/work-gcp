@@ -7,6 +7,7 @@ openai.organization = "org-kKd2RYxKu2zAcqTGE1to8zxP"
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 # bsmouse test........github
+# 11:41 추가
 
 print(openai.Model.list())
 # print(openai.api_key)
